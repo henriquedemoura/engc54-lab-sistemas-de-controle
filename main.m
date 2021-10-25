@@ -175,19 +175,6 @@ for i = 1:r_h_n-1
     end
 end
 
-ax1 = plot(4,1,1);
-plot(r_h, kp_plot(1,:))
-xlim([0,49])
-ylim([0,400])
-title(ax1,'Ganho proporcional por nível (Tanque 1)')
-ylabel(ax1, 'Kp')
-
-figure
-ax2 = plot(4,1,2);
-plot(r_h, kd_plot(2,:))
-xlim([0,49])
-title(ax1,'Ganho proporcional por nível (Tanque 2)')
-ylabel(ax1, 'Ki')
 %% Teste com controlador
 
 Heq_1 = 45;
